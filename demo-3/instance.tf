@@ -4,6 +4,9 @@ resource "aws_instance" "example" {
   provisioner "local-exec" {
     command = "echo ${aws_instance.example.private_ip} >> private_ips.txt"
   }
+  provisioner "local-exec" {
+    command = "echo ${aws_instance.example.public_ip} >> public_ips.txt"
+  }
 }
 
 output "ip" {
