@@ -1,5 +1,5 @@
 variable "AWS_REGION" {
-  default = "eu-west-1"
+  default = "us-east-1"
 }
 
 variable "PATH_TO_PRIVATE_KEY" {
@@ -13,13 +13,13 @@ variable "PATH_TO_PUBLIC_KEY" {
 variable "AMIS" {
   type = map(string)
   default = {
-    us-east-1 = "ami-13be557e"
-    us-west-2 = "ami-06b94666"
-    eu-west-1 = "ami-844e0bf7"
+    us-east-1 = "ami-07f5c641c23596eb9"
+    us-east-2 = "ami-0c9c2203357e2568a"
+    us-west-1 = "ami-0147c8e5021fdbb71"
+    us-west-2 = "ami-091127048df1f044d"
   }
 }
 
 variable "INSTANCE_DEVICE_NAME" {
   default = "/dev/xvdh"
 }
-
